@@ -1,0 +1,4 @@
+FROM jdk-1_8_201:base
+ADD target/docker-jenkins-integration-banking-2.4.3.jar docker-jenkins-integration-banking-2.4.3.jar
+ENTRYPOINT ["java","-jar", "/docker-jenkins-integration-banking-2.4.3.jar"]
+EXPOSE 8092

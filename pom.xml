@@ -10,8 +10,7 @@
 		<relativePath /> <!-- lookup parent from repository -->
 	</parent>
 	<groupId>com.zensar</groupId>
-	<artifactId>.banking</artifactId>
-	<version>0.0.1-SNAPSHOT</version>
+	<artifactId>docker-jenkins-integration-banking</artifactId>
 	<name>SpringBootBankingSystem</name>
 	<description>SpringBootBankingSystem</description>
 	<properties>
