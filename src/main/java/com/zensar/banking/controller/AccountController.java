@@ -6,6 +6,7 @@ import org.slf4j.LoggerFactory;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.PostMapping;
 import org.springframework.web.bind.annotation.RequestBody;
+import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
 
 import com.zensar.banking.model.BaseResponse;
@@ -21,6 +22,12 @@ public class AccountController {
 	AccountService accountService;
 	@Autowired
 	BaseResponse baseResponse;
+	
+	@RequestMapping("/hello")
+	public String hello() 
+	{
+		return "Hello javaTpoint";
+	}
 
 	// To Open Customer Account
 	@PostMapping("/accountCreation")
